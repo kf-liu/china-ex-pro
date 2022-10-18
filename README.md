@@ -1,8 +1,8 @@
-![中国制霸生成器](cover.png)
-# 中国制霸生成器
+![中国制霸生成器 自定义版](cover.png)
+# 中国制霸生成器 自定义版
 中国三十四省级行政区域制霸标记生成工具
 
-https://lab.magiconch.com/china-ex/
+https://china-ex-pro.netlify.app
 
 有感兴趣画简化矢量地图的小伙伴欢迎来一起整活儿~ 
 
@@ -18,13 +18,7 @@ https://lab.magiconch.com/china-ex/
 
 ## 关于等级
 
-我的个人标准
-
- - 居住：住过年以上
- - 短居：住过月以上
- - 游玩：旅行过
- - 出差：去过但完全没玩
- - 路过：汽车火车路过或飞机经停
+可以自定义
 
 ## 提示
 请使用自带浏览器进行保存
@@ -33,16 +27,17 @@ https://lab.magiconch.com/china-ex/
 参考自 https://zhung.com.tw/japanex/
 
 ## 衍生
+ - [本项目]中国制霸自定义版 @qiaork https://github.com/qiaork/china-ex-pro
  - 吃货制霸 @lvwzhen https://github.com/lvwzhen/foodie-ex
  - 美国版 @tenpages https://github.com/tenpages/us-level
 ## 微博
-https://weibo.com/1197780522/MaCGDCt6N
+https://weibo.com/u/5717297833
 
 ## GitHub
-https://github.com/itorr/china-ex
+https://github.com/qiaork/china-ex-pro
 
 ## 反馈
-https://github.com/itorr/china-ex/issues
+https://github.com/qiaork/china-ex-pro/issues
 
 ## 使用了
 腾祥嘉丽大圆
