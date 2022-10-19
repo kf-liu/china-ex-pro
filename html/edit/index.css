@@ -21,6 +21,10 @@
   min-width: calc(100% - 20px);
   max-width: calc(100% - 20px);
 }
+#编辑弹窗 p,
+#分享弹窗 p {
+  line-height: 24px;
+}
 #编辑弹窗 label,
 #分享弹窗 label {
   font-size: 8px;
