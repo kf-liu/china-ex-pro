@@ -1,0 +1,33 @@
+#编辑按钮,
+#分享按钮 {
+  width: 24px;
+}
+#编辑弹窗,
+#分享弹窗 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20% 20px;
+  background: #efb4b4;
+  overflow-y: auto;
+}
+#编辑弹窗 input,
+#分享弹窗 input,
+#编辑弹窗 textarea,
+#分享弹窗 textarea {
+  width: calc(100% - 20px);
+  min-width: calc(100% - 20px);
+  max-width: calc(100% - 20px);
+}
+#编辑弹窗 label,
+#分享弹窗 label {
+  font-size: 8px;
+}
+#编辑弹窗 a,
+#分享弹窗 a {
+  padding: 6px 8px;
+  margin: 10px 10px 10px 0;
+  text-align: right;
+}

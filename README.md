@@ -2,6 +2,8 @@
 # 中国制霸生成器 自定义版
 中国三十四省级行政区域制霸标记生成工具
 
+✨ 可以自定义标题、描述、等级、分数，并作为模板分享给其他人填写！
+
 https://china-ex-pro.kfliu.com
 
 有感兴趣画简化矢量地图的小伙伴欢迎来一起整活儿~ 
@@ -18,20 +20,16 @@ https://china-ex-pro.kfliu.com
 
 ## 关于等级
 
-可以自定义
+可以自定义，并且可以作为模板分享给其他人填写！
 
 ## 提示
 请使用自带浏览器进行保存
 
 ## 参考 
 参考自
- - https://zhung.com.tw/japanex/
  - https://github.com/itorr/china-ex
+ - https://zhung.com.tw/japanex/
 
-## 衍生
- - [本项目]中国制霸自定义版 @kf-liu https://github.com/kf-liu/china-ex-pro
- - 吃货制霸 @lvwzhen https://github.com/lvwzhen/foodie-ex
- - 美国版 @tenpages https://github.com/tenpages/us-level
 ## 微博
 https://weibo.com/u/5717297833
 
