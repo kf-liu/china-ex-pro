@@ -113,6 +113,8 @@ const 计分 = _=>{
 //     设置延时(_=>如何做爱元素.removeAttribute('data-loading'),2e3);
 // });
 
+let 等级样式 = '';
+
 const 宽 = 1134;
 const 高 = 976;
 const 比 = 2;
@@ -148,7 +150,7 @@ const 输出图像样式 = 输出图像.style;
 const 保存图像 = _=>{
     如何做爱元素.setAttribute('data-running','true');
 
-    const 文档文本 = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${宽} ${高}" width="${宽}px" height="${高}px">${图形.innerHTML}</svg>`;
+    const 文档文本 = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${宽} ${高}" width="${宽}px" height="${高}px">${等级样式}${图形.innerHTML}</svg>`;
     const 数据地址 = 从文档文本新建图形文件(文档文本);
     // open(数据地址);
     // return ;

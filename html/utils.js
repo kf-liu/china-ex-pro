@@ -15,6 +15,7 @@ const 生成查询参数 = (对象) => encodeURIComponent(Object.keys(对象)
 const 生成查询参数完整链接 = (对象) => `http://china-ex-pro.kfliu.com?${生成查询参数(对象)}`;
 
 const 复制 = (文本) => {
+    let flag = false;
     const input = document.createElement('input');
     document.body.appendChild(input);
     input.setAttribute('value', 文本);
@@ -22,8 +23,8 @@ const 复制 = (文本) => {
     if (document.execCommand('copy')) {
         document.execCommand('copy');
         console.log('复制成功', 文本);
-        return true;
+        flag = true;
     }
     document.body.removeChild(input);
-    return false;
+    return flag;
 };
