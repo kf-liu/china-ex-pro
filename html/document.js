@@ -20,12 +20,13 @@ const 数据 = {};
 const 获取所有省元素们 = _=>[...地区.children];
 const 获取所有省等级们 = _=>获取所有省元素们().map(el=>+el.getAttribute('level')||0);
 const 本地存储等级们钥匙 = 'china-ex-levels';
+let 多版本本地存储钥匙哈嘻 = '';
 const 保存等级们 = _=>{
-    本地存储.setItem(本地存储等级们钥匙,获取所有省等级们().join(''));
+    本地存储.setItem(本地存储等级们钥匙 + 多版本本地存储钥匙哈嘻,获取所有省等级们().join(''));
 };
 const 省等级们正则 = /^\d{34}$/;
 const 获取等级们并生效 = _=>{
-    const 等级们字串 = 本地存储.getItem(本地存储等级们钥匙);
+    const 等级们字串 = 本地存储.getItem(本地存储等级们钥匙 + 多版本本地存储钥匙哈嘻);
     if(!省等级们正则.test(等级们字串)) return;
     const 等级们 = 等级们字串.split('');
     获取所有省元素们().forEach((元素,下标)=>{
