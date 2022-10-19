@@ -1,0 +1,30 @@
+:root {
+  --level-colors-range: 6;
+}
+#地区 path[level="9"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 9) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="8"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 8) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="7"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 7) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="6"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 6) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="5"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 5) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="4"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 4) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="3"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 3) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="2"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 2) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}
+#地区 path[level="1"] {
+  fill: hsl(calc(0 + (var(--level-colors-range) - 1) * calc(360 / var(--level-colors-range))), 100%, 75%, 1);
+}

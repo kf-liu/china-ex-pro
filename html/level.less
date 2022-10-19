@@ -1,0 +1,52 @@
+:root {
+    --level-colors-range: 6;
+}
+
+@hue-default: 0;
+@level-colors-range: var(--level-colors-range);
+@level-color-steps: calc(360 / @level-colors-range);
+
+.level-hsl(@level) {
+    @hue: calc(@hue-default + (@level-colors-range - @level) * @level-color-steps);
+    @alpha: if((@level > @level-colors-range), 0, 1);
+}
+
+.fill(@level) {
+    @fill: hsl(.level-hsl(@level)[@hue], 100%, 75%, .level-hsl(@level)[@alpha]);
+}
+
+#地区 path[level="9"] {
+    fill: .fill(9)[@fill];
+}
+
+#地区 path[level="8"] {
+    fill: .fill(8)[@fill];
+}
+
+#地区 path[level="7"] {
+    fill: .fill(7)[@fill];
+}
+
+#地区 path[level="6"] {
+    fill: .fill(6)[@fill];
+}
+
+#地区 path[level="5"] {
+    fill: .fill(5)[@fill];
+}
+
+#地区 path[level="4"] {
+    fill: .fill(4)[@fill];
+}
+
+#地区 path[level="3"] {
+    fill: .fill(3)[@fill];
+}
+
+#地区 path[level="2"] {
+    fill: .fill(2)[@fill];
+}
+
+#地区 path[level="1"] {
+    fill: .fill(1)[@fill];
+}

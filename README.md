@@ -2,7 +2,7 @@
 # 中国制霸生成器 自定义版
 中国三十四省级行政区域制霸标记生成工具
 
-https://china-ex-pro.netlify.app
+https://china-ex-pro.kfliu.com
 
 有感兴趣画简化矢量地图的小伙伴欢迎来一起整活儿~ 
 
@@ -24,20 +24,22 @@ https://china-ex-pro.netlify.app
 请使用自带浏览器进行保存
 
 ## 参考 
-参考自 https://zhung.com.tw/japanex/
+参考自
+ - https://zhung.com.tw/japanex/
+ - https://github.com/itorr/china-ex
 
 ## 衍生
- - [本项目]中国制霸自定义版 @qiaork https://github.com/qiaork/china-ex-pro
+ - [本项目]中国制霸自定义版 @kf-liu https://github.com/kf-liu/china-ex-pro
  - 吃货制霸 @lvwzhen https://github.com/lvwzhen/foodie-ex
  - 美国版 @tenpages https://github.com/tenpages/us-level
 ## 微博
 https://weibo.com/u/5717297833
 
 ## GitHub
-https://github.com/qiaork/china-ex-pro
+https://github.com/kf-liu/china-ex-pro
 
 ## 反馈
-https://github.com/qiaork/china-ex-pro/issues
+https://github.com/kf-liu/china-ex-pro/issues
 
 ## 使用了
 腾祥嘉丽大圆
