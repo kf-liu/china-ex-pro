@@ -3,13 +3,15 @@
 中国三十四省级行政区域制霸标记生成工具
 
 ✨ 可以自定义标题、描述、等级、分数，并作为模板分享给其他人填写！
+
 ✨ Define your own title, description, levels and score and share!
 
 https://china-ex-pro.kfliu.com
 
 ## FEATURE
-✨ 分享：通过复制链接分享自定义模板
-✨ 自定义等级
+- v1.0.2
+  - ✨ 分享：通过复制链接分享自定义模板
+  - ✨ 自定义等级
 
 ## TODO
 - [ ] QR Code：二维码形式分享自定义等级
