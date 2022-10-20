@@ -56,26 +56,6 @@ a {
   display: block;
   padding: 4px 10px;
 }
-#设置等级 h2[data-level="5"],
-#设置等级 a[data-level="5"] {
-  background: #FF7E7E;
-}
-#设置等级 h2[data-level="4"],
-#设置等级 a[data-level="4"] {
-  background: #FFB57E;
-}
-#设置等级 h2[data-level="3"],
-#设置等级 a[data-level="3"] {
-  background: #FFE57E;
-}
-#设置等级 h2[data-level="2"],
-#设置等级 a[data-level="2"] {
-  background: #A8FFBE;
-}
-#设置等级 h2[data-level="1"],
-#设置等级 a[data-level="1"] {
-  background: #88AEFF;
-}
 .按钮 {
   background: #FFF;
   box-shadow: 0 0 0 4px #111;
@@ -170,4 +150,16 @@ html[data-running] {
 }
 html[data-running] body {
   pointer-events: none;
+}
+#提示 {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: max-content;
+  text-align: center;
+  background: #FFF;
+  box-shadow: 0 0 0 2px #111;
+  border-radius: 3px;
 }

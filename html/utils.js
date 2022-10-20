@@ -28,3 +28,59 @@ const 复制 = (文本) => {
     document.body.removeChild(input);
     return flag;
 };
+
+function downloadImage(image, url) {
+    image.setAttribute("crossOrigin", "anonymous");
+    image.src = url
+    return new Promise((resolve, reject) => {
+        image.onload = function () {
+            resolve(image)
+        };
+    })
+};
+
+const 地址生成二维码 = async (地址) => {
+    const 二维码地址 = `https://api.qrserver.com/v1/create-qr-code/?data=${地址}`;
+    return await downloadImage(二维码图片, 二维码地址);
+    // return await fetch(二维码地址);
+};
+
+const 对象生成二维码 = async (对象) => {
+    return await 地址生成二维码(生成查询参数完整链接(对象));
+};
+
+async function createPoster(bgImageUrl, 是否模板) {
+    var bgImage = new Image();
+    await downloadImage(bgImage, bgImageUrl)
+    var imgQrcode = 二维码图片;
+    var can = document.createElement('canvas');
+
+    can.setAttribute("crossOrigin", 'Anonymous');
+    let ctx = can.getContext("2d");
+
+    can.width = 1134;
+    can.height = 1134;
+    ctx.fillStyle = '#EFB4B4';
+    ctx.fillRect(0, 0, 1134, 1134);
+
+    // 背景图片
+    ctx.drawImage(bgImage, 0, 0, 1134, 976);
+    // 二维码
+    ctx.lineJoin = "round";
+    ctx.lineWidth = 3;
+    ctx.fillStyle = '#000';
+    ctx.fillRect(33, 是否模板 ? 848 : 918, 是否模板 ? 264 : 204, 是否模板 ? 264 : 204);
+    ctx.drawImage(imgQrcode, 35, 是否模板 ? 850 : 920, 是否模板 ? 260 : 200, 是否模板 ? 260 : 200);
+
+    // canvas转换为base64
+    var base64 = ""
+    try {
+        base64 = can.toDataURL();
+    } catch (err) {
+        alert(err)
+    }
+    can.toBlob((res) => {
+        open(URL.createObjectURL(res));
+    });
+    // document.getElementById('poster').src = base64;
+};

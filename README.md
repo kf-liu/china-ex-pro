@@ -6,15 +6,20 @@
 
 ✨ Define your own title, description, levels and score and share!
 
+![中国制霸生成器 自定义版 模板](pro.png)
+
 https://china-ex-pro.kfliu.com
 
-## FEATURE
-- v1.0.2
+## FEATURES
+- 1.1.0
+  - ✨ QR Code：二维码形式分享自定义模板
+- 1.0.2
   - ✨ 分享：通过复制链接分享自定义模板
   - ✨ 自定义等级
 
 ## TODO
-- [ ] QR Code：二维码形式分享自定义等级
+- [ ] 图例宽度优化
+- [ ] 图片下载体验优化
 
 ## 功能
 可以在线编辑标记 (如：居住、短居、游玩、出差、路过) 标记后可生成模版链接、图片进行社区分享

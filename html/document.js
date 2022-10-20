@@ -119,6 +119,7 @@ const 计分 = _=>{
 // });
 
 let 等级样式 = '';
+let 二维码图片 = new Image();
 
 const 宽 = 1134;
 const 高 = 976;
@@ -152,11 +153,19 @@ const 地址变图像元素 = (地址,回调)=>{
 const 日志 = _=>(新建图()).src = `https://lab.magiconch.com/api/china-ex/log?levels=${获取所有省等级们().join('')}`;
 
 const 输出图像样式 = 输出图像.style;
-const 保存图像 = _=>{
+const 保存图像 = (_, 是否模板 = false) =>{
     如何做爱元素.setAttribute('data-running','true');
 
-    const 文档文本 = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${宽} ${高}" width="${宽}px" height="${高}px">${等级样式}${图形.innerHTML}</svg>`;
+    let 原来的分数;
+    原来的分数 = 分数.innerHTML;
+    if (是否模板) 分数.innerHTML = '';
+    const 文档文本 = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${宽} ${高}" width="${宽}px" height="${高}px">${是否模板 ? '' : 等级样式}${图形.innerHTML}</svg>`;
+    分数.innerHTML = 原来的分数;
+    
     const 数据地址 = 从文档文本新建图形文件(文档文本);
+    createPoster(数据地址, 是否模板);
+    如何做爱元素.removeAttribute('data-running');
+    return;
     // open(数据地址);
     // return ;
     地址变图像元素(数据地址,图=>{
@@ -175,6 +184,7 @@ const 保存图像 = _=>{
         // return 下载文件(画板.toDataURL(),`[神奇海螺][中国制霸]${+new Date()}.png`,保存);
         画板.toBlob(元素数据=>{
             const 地址 = URL.createObjectURL(元素数据);
+            
             输出图像.querySelector('img').src = 地址;
             输出图像样式.display = '';
 
