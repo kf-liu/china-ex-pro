@@ -153,7 +153,7 @@ const 地址变图像元素 = (地址,回调)=>{
 const 日志 = _=>(新建图()).src = `https://lab.magiconch.com/api/china-ex/log?levels=${获取所有省等级们().join('')}`;
 
 const 输出图像样式 = 输出图像.style;
-const 保存图像 = (_, 是否模板 = false) =>{
+const 保存图像 = async(_, 是否模板 = false) =>{
     如何做爱元素.setAttribute('data-running','true');
 
     let 原来的分数;
@@ -163,37 +163,11 @@ const 保存图像 = (_, 是否模板 = false) =>{
     分数.innerHTML = 原来的分数;
     
     const 数据地址 = 从文档文本新建图形文件(文档文本);
-    createPoster(数据地址, 是否模板);
-    如何做爱元素.removeAttribute('data-running');
-    return;
-    // open(数据地址);
-    // return ;
-    地址变图像元素(数据地址,图=>{
-        上下文.fillStyle = '#efb4b4';
-        上下文.fillRect(
-            0,0,
-            宽 * 比,宽 * 比
-        );
-        上下文.drawImage(
-            图,
-            0,0,
-            宽,高,
-            0,(宽 - 高) * 比 / 2,
-            宽 * 比, 高 * 比
-        );
-        // return 下载文件(画板.toDataURL(),`[神奇海螺][中国制霸]${+new Date()}.png`,保存);
-        画板.toBlob(元素数据=>{
-            const 地址 = URL.createObjectURL(元素数据);
-            
-            输出图像.querySelector('img').src = 地址;
-            输出图像样式.display = '';
+    await createPoster(数据地址, 是否模板);
 
-            设置延时(_=>{
-                下载文件(地址,`[中国制霸Pro]${+new Date()}.png`);
-                如何做爱元素.removeAttribute('data-running');
-            },50)
-        },'image/png');
-    });
+    设置延时(_=>{
+        如何做爱元素.removeAttribute('data-running');
+    }, 500);
     日志();
 };
 

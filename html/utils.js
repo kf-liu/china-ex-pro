@@ -72,15 +72,13 @@ async function createPoster(bgImageUrl, 是否模板) {
     ctx.fillRect(33, 是否模板 ? 848 : 918, 是否模板 ? 264 : 204, 是否模板 ? 264 : 204);
     ctx.drawImage(imgQrcode, 35, 是否模板 ? 850 : 920, 是否模板 ? 260 : 200, 是否模板 ? 260 : 200);
 
-    // canvas转换为base64
-    var base64 = ""
-    try {
-        base64 = can.toDataURL();
-    } catch (err) {
-        alert(err)
-    }
-    can.toBlob((res) => {
-        open(URL.createObjectURL(res));
+    await can.toBlob((res) => {
+        const 地址 = URL.createObjectURL(res);
+        输出图像.querySelector('img').src = 地址;
+        输出图像样式.display = '';
+        设置延时(_=>{
+            下载文件(地址,`[中国制霸Pro]${+new Date()}.png`);
+            如何做爱元素.removeAttribute('data-running');
+        },50);
     });
-    // document.getElementById('poster').src = base64;
 };
