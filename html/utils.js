@@ -64,7 +64,7 @@ async function createPoster(bgImageUrl, 是否模板) {
     ctx.fillRect(0, 0, 1134, 1134);
 
     // 背景图片
-    ctx.drawImage(bgImage, 0, 0, 1134, 976);
+    ctx.drawImage(bgImage, 0, 0, 1134, 1134);
     // 二维码
     ctx.lineJoin = "round";
     ctx.lineWidth = 3;

@@ -122,7 +122,7 @@ let 等级样式 = '';
 let 二维码图片 = new Image();
 
 const 宽 = 1134;
-const 高 = 976;
+const 高 = 1134;
 const 比 = 2;
 
 const 画板 = 新建元素('canvas');
